@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function callServlet()
+{
+	alert('servlet is called');
+ document.getElementById("adminForm").action="./Regiservlet";
+ document.getElementById("adminForm").method = "POST";
+ document.getElementById("adminForm").submit();
+ 
+}
+</script>
+</head>
+<body>
+
+<form action="" id="adminForm" name="">
+FirstName<input type="text" id="fistName" name="firstName">
+LastName<input type="text" id="lastName" name="lastName">
+<button type="submit"  onclick="callServlet()" align="center"> Register</button>
+
+</form>
+</body>
+</html>

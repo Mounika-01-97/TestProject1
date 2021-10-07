@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>web project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Administratorname</display-name>
+    <servlet-name>Administratorname</servlet-name>
+    <servlet-class>webproject.controller.Administrator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Administratorname</servlet-name>
+    <url-pattern>/Administratorname</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Administrator</display-name>
+    <servlet-name>Administrator</servlet-name>
+    <servlet-class>webproject.controller.EmployRegiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Administrator</servlet-name>
+    <url-pattern>/Administrator</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Registration</display-name>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>webproject.controller.EmployRegiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+</web-app>

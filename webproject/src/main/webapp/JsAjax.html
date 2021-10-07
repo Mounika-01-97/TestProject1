@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function loadXMLDoc() {
+	alert("function called");
+	
+    document.getElementById("myDiv").action="./JaServlet";
+    document.getElementById("myDiv").method = "POST";
+    document.getElementById("myDiv").submit();
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.readystate= function() {
+    	
+    	document.getElementById("xyz").innerHTML = xmlhttp.responseText;
+   
+        xmlhttp.open("GET", "ajax_info.txt", true);
+        xmlhttp.send();
+        
+		
+		};
+}
+    
+</script>
+
+</head>
+<body>
+<form action="" id="myDiv">
+		Enter Your Name: <input type="text" id="userName" name="userName" />
+		<button type="submit"  onclick="loadXMLDoc()" align="center"> submit</button>
+		<button onfocus="hai()" >click</button>
+	</form>
+	<br>
+	<br>
+
+	<strong>Ajax Response</strong>:
+	<div id="xyz"></div>
+	<div id="ajaxGetUserServletResponse"></div>
+
+</body>
+</html>
