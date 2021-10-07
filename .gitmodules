@@ -1,0 +1,3 @@
+[submodule "Testproject1"]
+	path = Testproject1
+	url = https://github.com/Mounika-04/TestProject1.git
